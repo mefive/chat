@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, user-scalable=no" />
+  <title>chat</title>
+  <link rel="stylesheet" href="./normalize.css">
+  <link rel="stylesheet" href="./chat.css">
+  <script type="text/javascript" src="./jquery-1.8.0.min.js"></script>
+</head>
+<body>
+  <div id="chat">
+    <div class="message clearfix receive">
+      <img src="http://we.plus.sogou:8888/static/c9cc8f7a/images/headshot.png" alt="" class="message-avatar" />
+      <div class="message-content-container">
+        <div class="message-content">
+          Revceive Message Revceive Message Revceive Message Revceive Message
+        </div>
+      </div>
+    </div>
+
+    <div class="message clearfix send">
+      <img src="http://we.plus.sogou:8888/static/c9cc8f7a/images/headshot.png" alt="" class="message-avatar" />
+      <div class="message-content-container">
+        <div class="message-content">
+          Send Message
+        </div>
+      </div>
+    </div> 
+  </div>
+  
+  <!-- test -->
+  <div class="test-text">
+    <div>
+      <input name="bot-text" placeholder="bot text" />
+    </div>
+    <div>
+      <button id="bot-push">push</button>
+    </div>
+
+    <div>
+      <input name="user-text" placeholder="user text" />
+    </div>
+    <div>
+      <button id="user-push">push</button>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="./chat.js?1"></script>
+</body>
+</html>

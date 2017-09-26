@@ -1,0 +1,131 @@
+#chat {
+  background-color: #EFF1F3;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.message {
+  padding: 10px;
+}
+
+.message-ts-container {
+  font-size: 12px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.message-ts {
+  display: inline-block;
+  padding: 3px 5px;  
+  background-color: #DDDDDD;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.message-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #E5E5E5;
+}
+
+.message-name {
+  font-size: 12px;
+}
+
+.message-content {
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px solid #E5E5E5;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 12px;
+  display: inline-block;
+  position: relative;
+}
+
+.message.receive .message-avatar {
+  float: left;
+}
+
+.message.receive .message-content-container {
+  text-align: left;
+  margin-left: 50px;
+}
+
+.message.send .message-avatar {
+  float: right;
+}
+
+.message.send .message-content-container {
+  text-align: right;
+  margin-right: 50px;
+}
+
+.message.receive .message-content::before {
+  width: 0;
+  height: 0;
+  content: '';
+  z-index: 2;
+  border-right: 7.5px solid #E5E5E5;
+  border-bottom: 5px solid transparent;
+  border-top: 5px solid transparent;
+
+  position: absolute;
+  left: -9px;
+  top: 50%;
+  margin-top: -5px;
+  z-index: 2;
+}
+
+.message.receive .message-content::after {
+  width: 0;
+  height: 0;
+  content: '';
+  z-index: 2;
+  border-right: 7.5px solid #fff;
+  border-bottom: 5px solid transparent;
+  border-top: 5px solid transparent;
+
+  position: absolute;
+  left: -7px;
+  top: 50%;
+  margin-top: -5px;
+  z-index: 3;
+}
+
+.message.send .message-content::before {
+  width: 0;
+  height: 0;
+  content: '';
+  z-index: 2;
+  border-left: 7.5px solid #E5E5E5;
+  border-bottom: 5px solid transparent;
+  border-top: 5px solid transparent;
+
+  position: absolute;
+  right: -9px;
+  top: 50%;
+  margin-top: -5px;
+  z-index: 2;
+}
+
+.message.send .message-content::after {
+  width: 0;
+  height: 0;
+  content: '';
+  z-index: 2;
+  border-left: 7.5px solid #fff;
+  border-bottom: 5px solid transparent;
+  border-top: 5px solid transparent;
+
+  position: absolute;
+  right: -7px;
+  top: 50%;
+  margin-top: -5px;
+  z-index: 3;
+}
