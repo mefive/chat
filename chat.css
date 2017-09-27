@@ -179,12 +179,12 @@ body {
   z-index: 3;
 }
 
-.message-content.taocan .price-list {
+.taocan .price-list {
   margin-left: -10px;
   margin-bottom: -10px;
 }
 
-.message-content.taocan .price-item {
+.taocan .price-item {
   font-weight: bold;
   display: inline-block;
   color: #378ef8;
@@ -194,11 +194,11 @@ body {
   margin-bottom: 10px;
 }
 
-.message-content .recommend-list {
+.recommend-list {
   margin-left: -20px;
 }
 
-.message-content .recommend-item {
+.recommend-item {
   color: #378ef8;
   margin-left: 20px;
   margin-bottom: 10px;
