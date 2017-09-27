@@ -1,5 +1,25 @@
+.d-inline-block {
+  display: inline-block !important;
+}
+
+.text-primary {
+  color: #368EF9 !important;
+}
+
+.text-sm {
+  font-size: 12px !important;
+}
+
+.mt-1 {
+  margin-top: 10px !important;
+}
+
+.ml-1 {
+  margin-left: 10px !important;
+}
+
 #chat {
-  background-color: #EFF1F3;
+  background-color: #F5FAFD;
 }
 
 .clearfix:after {
@@ -137,4 +157,18 @@
   top: 50%;
   margin-top: -5px;
   z-index: 3;
+}
+
+.message-content.taocan .price-list {
+  margin-left: -10px;
+  margin-bottom: -10px;
+}
+
+.message-content.taocan .price-item {
+  display: inline-block;
+  color: #368EF9;
+  border: 1px solid #368EF9;
+  padding: 15px;
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
