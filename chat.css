@@ -1,3 +1,20 @@
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
 .d-inline-block {
   display: inline-block !important;
 }
@@ -16,6 +33,10 @@
 
 .ml-1 {
   margin-left: 10px !important;
+}
+
+.bold {
+  font-weight: bold !important;
 }
 
 #chat {
@@ -63,7 +84,6 @@
   border: 1px solid #E5E5E5;
   margin-top: 10px;
   padding: 10px;
-  font-size: 12px;
   display: inline-block;
   position: relative;
 }
@@ -165,10 +185,32 @@
 }
 
 .message-content.taocan .price-item {
+  font-weight: bold;
   display: inline-block;
-  color: #368EF9;
-  border: 1px solid #368EF9;
+  color: #378ef8;
+  border: 1px solid #378ef8;
   padding: 15px;
   margin-left: 10px;
   margin-bottom: 10px;
+}
+
+.message-content .recommend-list {
+  margin-left: -20px;
+}
+
+.message-content .recommend-item {
+  color: #378ef8;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.message-content .recommend-item:before {
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: #c6c6c6;
+  vertical-align: middle;
+  border-radius: 50%;
+  margin-right: 5px;
 }
